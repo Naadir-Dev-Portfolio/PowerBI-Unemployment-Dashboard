@@ -1,0 +1,60 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.7.0/schema.json",
+  "name": "a02kpi02vacancyrate00",
+  "position": {
+    "x": 860,
+    "y": 20,
+    "z": 2000,
+    "height": 110,
+    "width": 400,
+    "tabOrder": 2000
+  },
+  "visual": {
+    "visualType": "cardVisual",
+    "query": {
+      "queryState": {
+        "Rows": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Fact National Monthly"
+                    }
+                  },
+                  "Property": "Vacancy Rate Per 100 Jobs"
+                }
+              },
+              "queryRef": "Fact National Monthly.Vacancy Rate Per 100 Jobs",
+              "nativeQueryRef": "Vacancy Rate Per 100 Jobs"
+            }
+          ]
+        }
+      }
+    },
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Vacancy Rate (per 100 jobs)'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}
