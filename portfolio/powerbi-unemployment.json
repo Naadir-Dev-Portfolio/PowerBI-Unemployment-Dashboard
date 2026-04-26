@@ -1,7 +1,7 @@
 {
   "section": "powerbi",
   "category": "dashboards",
-  "n": 8,
+  "n": 1,
   "title": "UK Unemployment",
   "img": "",
   "desc": "Labour market dashboard tracking UK unemployment trends, claimant counts, and regional variation using official ONS and DWP data. Live interactive version published on Power BI service.",
