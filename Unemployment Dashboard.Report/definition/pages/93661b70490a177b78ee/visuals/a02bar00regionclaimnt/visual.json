@@ -2,12 +2,12 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.7.0/schema.json",
   "name": "a02bar00regionclaimnt",
   "position": {
-    "x": 20,
+    "x": 177.69230769230768,
     "y": 410,
-    "z": 5000,
+    "z": 14000,
     "height": 290,
-    "width": 620,
-    "tabOrder": 5000
+    "width": 542.30769230769226,
+    "tabOrder": 2000
   },
   "visual": {
     "visualType": "clusteredBarChart",

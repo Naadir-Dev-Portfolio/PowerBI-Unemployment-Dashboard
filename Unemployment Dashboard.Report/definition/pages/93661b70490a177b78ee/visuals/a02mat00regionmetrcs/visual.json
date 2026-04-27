@@ -2,12 +2,12 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.7.0/schema.json",
   "name": "a02mat00regionmetrcs",
   "position": {
-    "x": 660,
+    "x": 725.38461538461536,
     "y": 410,
-    "z": 6000,
+    "z": 15000,
     "height": 290,
-    "width": 600,
-    "tabOrder": 6000
+    "width": 534.61538461538464,
+    "tabOrder": 3000
   },
   "visual": {
     "visualType": "pivotTable",

@@ -2,11 +2,11 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.7.0/schema.json",
   "name": "a03map00localclaimnt",
   "position": {
-    "x": 20,
-    "y": 110,
-    "z": 1000,
-    "height": 320,
-    "width": 600,
+    "x": 173.84615384615384,
+    "y": 155.38461538461539,
+    "z": 2000,
+    "height": 274.61538461538458,
+    "width": 501.53846153846155,
     "tabOrder": 1000
   },
   "visual": {

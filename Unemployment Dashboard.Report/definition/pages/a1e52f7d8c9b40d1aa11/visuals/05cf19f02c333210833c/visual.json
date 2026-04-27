@@ -18,7 +18,7 @@
             "roundEdge": {
               "expr": {
                 "Literal": {
-                  "Value": "8L"
+                  "Value": "2L"
                 }
               }
             }

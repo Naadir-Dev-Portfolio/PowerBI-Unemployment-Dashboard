@@ -3,9 +3,9 @@
   "name": "a04tbl00detailtable",
   "position": {
     "x": 660,
-    "y": 460,
-    "z": 5000,
-    "height": 240,
+    "y": 476.92307692307691,
+    "z": 6000,
+    "height": 223.07692307692307,
     "width": 600,
     "tabOrder": 5000
   },
@@ -73,6 +73,23 @@
             }
           ]
         }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "Dim Area"
+                  }
+                },
+                "Property": "AreaName"
+              }
+            },
+            "direction": "Ascending"
+          }
+        ]
       }
     },
     "visualContainerObjects": {

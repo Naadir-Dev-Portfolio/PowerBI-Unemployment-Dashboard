@@ -2,12 +2,12 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.7.0/schema.json",
   "name": "a02ln00claimantovrtim",
   "position": {
-    "x": 20,
-    "y": 150,
-    "z": 3000,
-    "height": 240,
-    "width": 620,
-    "tabOrder": 3000
+    "x": 177.69230769230768,
+    "y": 128.46153846153845,
+    "z": 12000,
+    "height": 261.53846153846155,
+    "width": 542.30769230769226,
+    "tabOrder": 0
   },
   "visual": {
     "visualType": "lineChart",

@@ -2,11 +2,11 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.7.0/schema.json",
   "name": "a03mat00localmetrics",
   "position": {
-    "x": 640,
+    "x": 702.30769230769226,
     "y": 440,
-    "z": 4000,
+    "z": 5000,
     "height": 260,
-    "width": 620,
+    "width": 557.69230769230762,
     "tabOrder": 4000
   },
   "visual": {
@@ -78,6 +78,23 @@
             }
           ]
         }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "Dim Area"
+                  }
+                },
+                "Property": "AreaName"
+              }
+            },
+            "direction": "Ascending"
+          }
+        ]
       }
     },
     "visualContainerObjects": {

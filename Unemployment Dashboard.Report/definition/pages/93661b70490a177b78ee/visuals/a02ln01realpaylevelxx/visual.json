@@ -2,12 +2,12 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.7.0/schema.json",
   "name": "a02ln01realpaylevelxx",
   "position": {
-    "x": 660,
-    "y": 150,
-    "z": 4000,
-    "height": 240,
-    "width": 600,
-    "tabOrder": 4000
+    "x": 720,
+    "y": 128.46153846153845,
+    "z": 13000,
+    "height": 261.53846153846155,
+    "width": 540,
+    "tabOrder": 1000
   },
   "visual": {
     "visualType": "lineChart",
