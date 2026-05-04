@@ -1,13 +1,13 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.7.0/schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.8.0/schema.json",
   "name": "b825e0092daec998bc12",
   "position": {
-    "x": 907.14289011631956,
-    "y": 418.09180797284432,
-    "z": 15000,
-    "height": 239.58181908697173,
-    "width": 362.85710988368032,
-    "tabOrder": 2000
+    "x": 871.33333333333337,
+    "y": 386.66666666666669,
+    "z": 14000,
+    "height": 292,
+    "width": 408.66666666666669,
+    "tabOrder": 4000
   },
   "visual": {
     "visualType": "lineChart",
@@ -47,6 +47,20 @@
               },
               "queryRef": "Fact National Monthly.Real Regular Pay Level GBP",
               "nativeQueryRef": "Real Regular Pay Level GBP"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Fact National Monthly"
+                    }
+                  },
+                  "Property": "Real Total Pay Level GBP"
+                }
+              },
+              "queryRef": "Fact National Monthly.Real Total Pay Level GBP",
+              "nativeQueryRef": "Real Total Pay Level GBP"
             }
           ]
         }
@@ -63,10 +77,10 @@
                 }
               }
             },
-            "fontSize": {
+            "showAxisTitle": {
               "expr": {
                 "Literal": {
-                  "Value": "9D"
+                  "Value": "false"
                 }
               }
             },
@@ -81,10 +95,10 @@
                 }
               }
             },
-            "showAxisTitle": {
+            "fontSize": {
               "expr": {
                 "Literal": {
-                  "Value": "true"
+                  "Value": "9D"
                 }
               }
             }
@@ -101,10 +115,10 @@
                 }
               }
             },
-            "fontSize": {
+            "showAxisTitle": {
               "expr": {
                 "Literal": {
-                  "Value": "9D"
+                  "Value": "false"
                 }
               }
             },
@@ -119,17 +133,10 @@
                 }
               }
             },
-            "showAxisTitle": {
+            "fontSize": {
               "expr": {
                 "Literal": {
-                  "Value": "false"
-                }
-              }
-            },
-            "gridlineShow": {
-              "expr": {
-                "Literal": {
-                  "Value": "false"
+                  "Value": "9D"
                 }
               }
             },
@@ -150,33 +157,18 @@
                   "Value": "'dashed'"
                 }
               }
+            },
+            "gridlineShow": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
             }
           }
         }
       ],
       "dataPoint": [
-        {
-          "properties": {
-            "transparency": {
-              "expr": {
-                "Literal": {
-                  "Value": "97D"
-                }
-              }
-            },
-            "fill": {
-              "solid": {
-                "color": {
-                  "expr": {
-                    "Literal": {
-                      "Value": "'#C25B3F'"
-                    }
-                  }
-                }
-              }
-            }
-          }
-        },
         {
           "properties": {
             "fill": {
@@ -190,9 +182,6 @@
                 }
               }
             }
-          },
-          "selector": {
-            "metadata": "Fact National Monthly.National Claimant Count (K)"
           }
         },
         {
@@ -212,6 +201,24 @@
           "selector": {
             "metadata": "Fact National Monthly.Real Regular Pay Level GBP"
           }
+        },
+        {
+          "properties": {
+            "fill": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#0F5F73'"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Fact National Monthly.Real Total Pay Level GBP"
+          }
         }
       ],
       "lineStyles": [
@@ -220,14 +227,59 @@
             "strokeWidth": {
               "expr": {
                 "Literal": {
-                  "Value": "2D"
+                  "Value": "3D"
                 }
               }
             },
             "areaShow": {
               "expr": {
                 "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "legend": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
                   "Value": "true"
+                }
+              }
+            },
+            "position": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Top'"
+                }
+              }
+            },
+            "showTitle": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            },
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "9D"
+                }
+              }
+            },
+            "labelColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#021B37'"
+                    }
+                  }
                 }
               }
             }
@@ -252,13 +304,6 @@
       "title": [
         {
           "properties": {
-            "text": {
-              "expr": {
-                "Literal": {
-                  "Value": "'Real Pay Growth'"
-                }
-              }
-            },
             "show": {
               "expr": {
                 "Literal": {
@@ -266,28 +311,10 @@
                 }
               }
             },
-            "heading": {
+            "text": {
               "expr": {
                 "Literal": {
-                  "Value": "'Heading4'"
-                }
-              }
-            },
-            "titleWrap": {
-              "expr": {
-                "Literal": {
-                  "Value": "true"
-                }
-              }
-            },
-            "fontColor": {
-              "solid": {
-                "color": {
-                  "expr": {
-                    "Literal": {
-                      "Value": "'#021B37'"
-                    }
-                  }
+                  "Value": "'Real Pay Levels: Regular vs Total'"
                 }
               }
             },
@@ -305,10 +332,28 @@
                 }
               }
             },
+            "fontColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#021B37'"
+                    }
+                  }
+                }
+              }
+            },
             "bold": {
               "expr": {
                 "Literal": {
                   "Value": "true"
+                }
+              }
+            },
+            "heading": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Heading4'"
                 }
               }
             }
@@ -339,7 +384,7 @@
             "transparency": {
               "expr": {
                 "Literal": {
-                  "Value": "0D"
+                  "Value": "60D"
                 }
               }
             }
@@ -359,7 +404,7 @@
             "radius": {
               "expr": {
                 "Literal": {
-                  "Value": "9D"
+                  "Value": "5D"
                 }
               }
             },
@@ -376,7 +421,7 @@
                   "expr": {
                     "ThemeDataColor": {
                       "ColorId": 0,
-                      "Percent": -0.1
+                      "Percent": -0.2
                     }
                   }
                 }

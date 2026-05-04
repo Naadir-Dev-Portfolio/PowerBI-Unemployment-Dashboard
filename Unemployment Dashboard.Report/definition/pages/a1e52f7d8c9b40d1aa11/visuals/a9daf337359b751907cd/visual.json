@@ -1,13 +1,13 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.7.0/schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.8.0/schema.json",
   "name": "a9daf337359b751907cd",
   "position": {
-    "x": 536.92307692307691,
-    "y": 417.69230769230768,
+    "x": 464.66666666666669,
+    "y": 386.66666666666669,
     "z": 13000,
-    "height": 239.23076923076923,
-    "width": 363.07692307692304,
-    "tabOrder": 5000
+    "height": 292,
+    "width": 400,
+    "tabOrder": 11000
   },
   "visual": {
     "visualType": "lineChart",
@@ -23,11 +23,11 @@
                       "Entity": "Dim Date"
                     }
                   },
-                  "Property": "YearMonth"
+                  "Property": "MonthShort"
                 }
               },
-              "queryRef": "Dim Date.YearMonth",
-              "nativeQueryRef": "YearMonth",
+              "queryRef": "Dim Date.MonthShort",
+              "nativeQueryRef": "MonthShort",
               "active": true
             }
           ]
@@ -42,11 +42,25 @@
                       "Entity": "Fact National Monthly"
                     }
                   },
-                  "Property": "Vacancies (K)"
+                  "Property": "Vacancies CY (K)"
                 }
               },
-              "queryRef": "Fact National Monthly.Vacancies (K)",
-              "nativeQueryRef": "Vacancies (K)"
+              "queryRef": "Fact National Monthly.Vacancies CY (K)",
+              "nativeQueryRef": "Vacancies CY (K)"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Fact National Monthly"
+                    }
+                  },
+                  "Property": "Vacancies PY (K)"
+                }
+              },
+              "queryRef": "Fact National Monthly.Vacancies PY (K)",
+              "nativeQueryRef": "Vacancies PY (K)"
             }
           ]
         }
@@ -63,10 +77,10 @@
                 }
               }
             },
-            "fontSize": {
+            "showAxisTitle": {
               "expr": {
                 "Literal": {
-                  "Value": "9D"
+                  "Value": "false"
                 }
               }
             },
@@ -81,10 +95,10 @@
                 }
               }
             },
-            "showAxisTitle": {
+            "fontSize": {
               "expr": {
                 "Literal": {
-                  "Value": "true"
+                  "Value": "9D"
                 }
               }
             }
@@ -101,10 +115,10 @@
                 }
               }
             },
-            "fontSize": {
+            "showAxisTitle": {
               "expr": {
                 "Literal": {
-                  "Value": "9D"
+                  "Value": "false"
                 }
               }
             },
@@ -119,17 +133,10 @@
                 }
               }
             },
-            "showAxisTitle": {
+            "fontSize": {
               "expr": {
                 "Literal": {
-                  "Value": "false"
-                }
-              }
-            },
-            "gridlineShow": {
-              "expr": {
-                "Literal": {
-                  "Value": "false"
+                  "Value": "9D"
                 }
               }
             },
@@ -150,6 +157,13 @@
                   "Value": "'dashed'"
                 }
               }
+            },
+            "gridlineShow": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
             }
           }
         }
@@ -157,19 +171,12 @@
       "dataPoint": [
         {
           "properties": {
-            "transparency": {
-              "expr": {
-                "Literal": {
-                  "Value": "97D"
-                }
-              }
-            },
             "fill": {
               "solid": {
                 "color": {
                   "expr": {
                     "Literal": {
-                      "Value": "'#C25B3F'"
+                      "Value": "'#051B37'"
                     }
                   }
                 }
@@ -192,7 +199,7 @@
             }
           },
           "selector": {
-            "metadata": "Fact National Monthly.National Claimant Count (K)"
+            "metadata": "Fact National Monthly.Vacancies CY (K)"
           }
         },
         {
@@ -202,7 +209,7 @@
                 "color": {
                   "expr": {
                     "Literal": {
-                      "Value": "'#051B37'"
+                      "Value": "'#A8B0B6'"
                     }
                   }
                 }
@@ -210,7 +217,7 @@
             }
           },
           "selector": {
-            "metadata": "Fact National Monthly.Vacancies (K)"
+            "metadata": "Fact National Monthly.Vacancies PY (K)"
           }
         }
       ],
@@ -220,14 +227,59 @@
             "strokeWidth": {
               "expr": {
                 "Literal": {
-                  "Value": "2D"
+                  "Value": "3D"
                 }
               }
             },
             "areaShow": {
               "expr": {
                 "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "legend": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
                   "Value": "true"
+                }
+              }
+            },
+            "position": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Top'"
+                }
+              }
+            },
+            "showTitle": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            },
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "9D"
+                }
+              }
+            },
+            "labelColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#021B37'"
+                    }
+                  }
                 }
               }
             }
@@ -246,19 +298,29 @@
             }
           }
         }
+      ],
+      "y2Axis": [
+        {
+          "properties": {
+            "secLabelColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#6B7E8A'"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
       ]
     },
     "visualContainerObjects": {
       "title": [
         {
           "properties": {
-            "text": {
-              "expr": {
-                "Literal": {
-                  "Value": "'Vacancies'"
-                }
-              }
-            },
             "show": {
               "expr": {
                 "Literal": {
@@ -266,28 +328,10 @@
                 }
               }
             },
-            "heading": {
+            "text": {
               "expr": {
                 "Literal": {
-                  "Value": "'Heading4'"
-                }
-              }
-            },
-            "titleWrap": {
-              "expr": {
-                "Literal": {
-                  "Value": "true"
-                }
-              }
-            },
-            "fontColor": {
-              "solid": {
-                "color": {
-                  "expr": {
-                    "Literal": {
-                      "Value": "'#021B37'"
-                    }
-                  }
+                  "Value": "'Vacancies: This Year vs Last'"
                 }
               }
             },
@@ -305,10 +349,28 @@
                 }
               }
             },
+            "fontColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#021B37'"
+                    }
+                  }
+                }
+              }
+            },
             "bold": {
               "expr": {
                 "Literal": {
                   "Value": "true"
+                }
+              }
+            },
+            "heading": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Heading4'"
                 }
               }
             }
@@ -339,7 +401,7 @@
             "transparency": {
               "expr": {
                 "Literal": {
-                  "Value": "0D"
+                  "Value": "60D"
                 }
               }
             }
@@ -359,7 +421,7 @@
             "radius": {
               "expr": {
                 "Literal": {
-                  "Value": "9D"
+                  "Value": "5D"
                 }
               }
             },
@@ -376,7 +438,7 @@
                   "expr": {
                     "ThemeDataColor": {
                       "ColorId": 0,
-                      "Percent": -0.1
+                      "Percent": -0.2
                     }
                   }
                 }

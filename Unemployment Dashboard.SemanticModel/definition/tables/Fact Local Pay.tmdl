@@ -24,6 +24,56 @@ table 'Fact Local Pay'
 		displayFolder: Pay Metrics
 		lineageTag: 771a3a4a-c342-4021-a9cf-515ba4d92595
 
+	measure 'Median Weekly Pay (All) GBP' = CALCULATE(AVERAGE('Fact Local Pay'[MedianWeeklyPayGBP]), 'Fact Local Pay'[SexGroup] = "All")
+		formatString: £#,##0.0
+		displayFolder: Pay Metrics
+		lineageTag: 6c76b90d-9c14-41b6-96f0-bd72f6e59cbf
+
+	measure 'Mean Weekly Pay (All) GBP' = CALCULATE(AVERAGE('Fact Local Pay'[MeanWeeklyPayGBP]), 'Fact Local Pay'[SexGroup] = "All")
+		formatString: £#,##0.0
+		displayFolder: Pay Metrics
+		lineageTag: 2104629c-45fb-43c3-bc6c-f32f6f583f94
+
+	measure 'Female Median Pay GBP' = CALCULATE(AVERAGE('Fact Local Pay'[MedianWeeklyPayGBP]), 'Fact Local Pay'[SexGroup] = "Female")
+		formatString: £#,##0.0
+		displayFolder: Pay Metrics
+		lineageTag: 885877c3-113e-4964-9f5d-96c3a0b4bb5c
+
+	measure 'Male Median Pay GBP' = CALCULATE(AVERAGE('Fact Local Pay'[MedianWeeklyPayGBP]), 'Fact Local Pay'[SexGroup] = "Male")
+		formatString: £#,##0.0
+		displayFolder: Pay Metrics
+		lineageTag: 74db9917-be97-4ea8-8788-71411ca888c6
+
+	measure 'P10 Weekly Pay GBP' = CALCULATE(AVERAGE('Fact Local Pay'[P10]), 'Fact Local Pay'[SexGroup] = "All")
+		formatString: £#,##0.0
+		displayFolder: Pay Distribution
+		lineageTag: eb668022-94cd-49b5-9f92-399a9cf5f047
+
+	measure 'P25 Weekly Pay GBP' = CALCULATE(AVERAGE('Fact Local Pay'[P25]), 'Fact Local Pay'[SexGroup] = "All")
+		formatString: £#,##0.0
+		displayFolder: Pay Distribution
+		lineageTag: bcd0dccd-361d-45fe-9504-7e8ea3f3952b
+
+	measure 'P75 Weekly Pay GBP' = CALCULATE(AVERAGE('Fact Local Pay'[P75]), 'Fact Local Pay'[SexGroup] = "All")
+		formatString: £#,##0.0
+		displayFolder: Pay Distribution
+		lineageTag: c6a879ac-85ee-4f49-b7d1-590978e9fdea
+
+	measure 'P90 Weekly Pay GBP' = CALCULATE(AVERAGE('Fact Local Pay'[P90]), 'Fact Local Pay'[SexGroup] = "All")
+		formatString: £#,##0.0
+		displayFolder: Pay Distribution
+		lineageTag: 603d7d00-e191-49ba-84f7-0f0478654f79
+
+	measure 'Pay P90 to P10 Ratio' = DIVIDE(CALCULATE(AVERAGE('Fact Local Pay'[P90]), 'Fact Local Pay'[SexGroup] = "All"), CALCULATE(AVERAGE('Fact Local Pay'[P10]), 'Fact Local Pay'[SexGroup] = "All"))
+		formatString: 0.00"x"
+		displayFolder: Pay Distribution
+		lineageTag: b14c7974-18aa-4a6b-8c91-62c2ab0301d6
+
+	measure 'Total Jobs (Thousands)' = CALCULATE(SUM('Fact Local Pay'[JobsThousand]), 'Fact Local Pay'[SexGroup] = "All")
+		formatString: #,##0.0
+		displayFolder: Pay Metrics
+		lineageTag: 60637063-63e1-4f49-83ff-120cd19e1cd7
+
 	column AreaName
 		dataType: string
 		lineageTag: b4b2f6b4-94c2-41b5-9f76-f406ffb6a103

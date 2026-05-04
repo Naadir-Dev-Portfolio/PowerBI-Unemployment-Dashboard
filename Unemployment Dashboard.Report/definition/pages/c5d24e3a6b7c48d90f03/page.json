@@ -1,8 +1,0 @@
-{
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/page/2.1.0/schema.json",
-  "name": "c5d24e3a6b7c48d90f03",
-  "displayName": "Pay And Demographics",
-  "displayOption": "FitToPage",
-  "height": 720,
-  "width": 1280
-}

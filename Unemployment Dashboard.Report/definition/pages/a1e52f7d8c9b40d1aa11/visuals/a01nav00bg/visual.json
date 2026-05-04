@@ -1,13 +1,13 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.7.0/schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.8.0/schema.json",
   "name": "a01nav00bg",
   "position": {
     "x": 0,
-    "y": 4.615384615384615,
-    "z": 2000,
-    "height": 706.15384615384608,
-    "width": 155.38461538461539,
-    "tabOrder": 1000
+    "y": 0,
+    "z": 1000,
+    "height": 720,
+    "width": 47.142857142857146,
+    "tabOrder": 0
   },
   "visual": {
     "visualType": "shape",
@@ -18,7 +18,7 @@
             "roundEdge": {
               "expr": {
                 "Literal": {
-                  "Value": "9L"
+                  "Value": "5L"
                 }
               }
             }
@@ -64,7 +64,7 @@
             "transparency": {
               "expr": {
                 "Literal": {
-                  "Value": "5D"
+                  "Value": "20D"
                 }
               }
             }
@@ -106,6 +106,78 @@
               "expr": {
                 "Literal": {
                   "Value": "'PageNavigation'"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "title": [
+        {
+          "properties": {
+            "titleWrap": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "background": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            },
+            "transparency": {
+              "expr": {
+                "Literal": {
+                  "Value": "0D"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "general": [
+        {
+          "properties": {
+            "keepLayerOrder": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "border": [
+        {
+          "properties": {
+            "width": {
+              "expr": {
+                "Literal": {
+                  "Value": "1D"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "visualHeader": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
                 }
               }
             }

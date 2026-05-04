@@ -56,8 +56,28 @@
       "type": "RegisteredResources",
       "items": [
         {
+          "name": "Area3561490704845063.png",
+          "path": "Area3561490704845063.png",
+          "type": "Image"
+        },
+        {
+          "name": "Background-Texture46116950851740846.png",
+          "path": "Background-Texture46116950851740846.png",
+          "type": "Image"
+        },
+        {
+          "name": "home9024827341485859.png",
+          "path": "home9024827341485859.png",
+          "type": "Image"
+        },
+        {
           "name": "information0026175831059931376.png",
           "path": "information0026175831059931376.png",
+          "type": "Image"
+        },
+        {
+          "name": "labour-market5121234749816596.png",
+          "path": "labour-market5121234749816596.png",
           "type": "Image"
         },
         {
@@ -73,6 +93,11 @@
         {
           "name": "powerbi_logo7843627364923983.png",
           "path": "powerbi_logo7843627364923983.png",
+          "type": "Image"
+        },
+        {
+          "name": "sales-team1902527810658987.png",
+          "path": "sales-team1902527810658987.png",
           "type": "Image"
         }
       ]

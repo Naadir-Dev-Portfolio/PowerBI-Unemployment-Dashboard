@@ -58,6 +58,21 @@ table 'Outlook Snapshot'
 		displayFolder: Summary
 		lineageTag: d7168b09-e832-4d50-a0b0-01c560f7ff93
 
+	measure 'Latest Vacancies Per Claimant' = MAX('Outlook Snapshot'[VacanciesPerClaimant])
+		formatString: 0.00
+		displayFolder: Summary
+		lineageTag: 877fa8ee-ad8e-48fb-9980-eb738ea66b51
+
+	measure 'Claimant 12M Delta (K)' = MAX('Outlook Snapshot'[Claimant12MDeltaK])
+		formatString: +#,##0.0;-#,##0.0;0
+		displayFolder: Summary
+		lineageTag: 3fd2aad8-de15-4598-b60a-93f2c96857fd
+
+	measure 'Vacancies 12M Delta (K)' = MAX('Outlook Snapshot'[Vacancies12MDeltaK])
+		formatString: +#,##0.0;-#,##0.0;0
+		displayFolder: Summary
+		lineageTag: 27658a64-ff0d-44dd-8400-344f2d27981d
+
 	column SnapshotDate
 		dataType: dateTime
 		formatString: Long Date

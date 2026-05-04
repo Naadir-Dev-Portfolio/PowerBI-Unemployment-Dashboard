@@ -93,6 +93,12 @@ table 'Dim Date'
 
 		annotation SummarizationSetBy = Automatic
 
+	column MonthShort = LEFT('Dim Date'[MonthName], 3)
+		dataType: string
+		lineageTag: 372608d8-3761-4bb5-be87-9af41dfe3f06
+		summarizeBy: none
+		sortByColumn: MonthNo
+
 	partition 'Dim Date-Partition' = m
 		mode: import
 		source =

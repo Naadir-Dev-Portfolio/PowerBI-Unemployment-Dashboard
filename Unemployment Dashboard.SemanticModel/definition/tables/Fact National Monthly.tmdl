@@ -36,6 +36,36 @@ table 'Fact National Monthly'
 		displayFolder: National Metrics
 		lineageTag: aa7d2d83-0929-45da-b4f4-3bb4973d12cd
 
+	measure 'Real Total Pay YoY %' = AVERAGE('Fact National Monthly'[RealTotalPayYoYSinglePct]) / 100
+		formatString: 0.0%
+		displayFolder: National Metrics
+		lineageTag: 02ac4273-2eb8-4884-b113-5d4e18513f39
+
+	measure 'Claimant Count CY (K)' = VAR _LY = YEAR(CALCULATE(MAX('Outlook Snapshot'[SnapshotDate]), REMOVEFILTERS('Dim Date'))) VAR _MN = SELECTEDVALUE('Dim Date'[MonthShort]) RETURN IF(NOT ISBLANK(_MN), CALCULATE([National Claimant Count (K)], ALL('Dim Date'), 'Dim Date'[Year] = _LY, 'Dim Date'[MonthShort] = _MN), CALCULATE([National Claimant Count (K)], ALL('Dim Date'), 'Dim Date'[Year] = _LY))
+		formatString: #,##0.0
+		displayFolder: YoY Comparison
+		lineageTag: f7357810-4a3c-4d60-aa0b-e2efab69cb24
+
+	measure 'Claimant Count PY (K)' = VAR _LY = YEAR(CALCULATE(MAX('Outlook Snapshot'[SnapshotDate]), REMOVEFILTERS('Dim Date'))) VAR _MN = SELECTEDVALUE('Dim Date'[MonthShort]) RETURN IF(NOT ISBLANK(_MN), CALCULATE([National Claimant Count (K)], ALL('Dim Date'), 'Dim Date'[Year] = _LY - 1, 'Dim Date'[MonthShort] = _MN), CALCULATE([National Claimant Count (K)], ALL('Dim Date'), 'Dim Date'[Year] = _LY - 1))
+		formatString: #,##0.0
+		displayFolder: YoY Comparison
+		lineageTag: 0be98fed-0998-45a2-a777-fd8db02b0485
+
+	measure 'Vacancies CY (K)' = VAR _LY = YEAR(CALCULATE(MAX('Outlook Snapshot'[SnapshotDate]), REMOVEFILTERS('Dim Date'))) VAR _MN = SELECTEDVALUE('Dim Date'[MonthShort]) RETURN IF(NOT ISBLANK(_MN), CALCULATE([Vacancies (K)], ALL('Dim Date'), 'Dim Date'[Year] = _LY, 'Dim Date'[MonthShort] = _MN), CALCULATE([Vacancies (K)], ALL('Dim Date'), 'Dim Date'[Year] = _LY))
+		formatString: #,##0.0
+		displayFolder: YoY Comparison
+		lineageTag: db6871b2-4392-4197-999f-6d3f29310a3e
+
+	measure 'Vacancies PY (K)' = VAR _LY = YEAR(CALCULATE(MAX('Outlook Snapshot'[SnapshotDate]), REMOVEFILTERS('Dim Date'))) VAR _MN = SELECTEDVALUE('Dim Date'[MonthShort]) RETURN IF(NOT ISBLANK(_MN), CALCULATE([Vacancies (K)], ALL('Dim Date'), 'Dim Date'[Year] = _LY - 1, 'Dim Date'[MonthShort] = _MN), CALCULATE([Vacancies (K)], ALL('Dim Date'), 'Dim Date'[Year] = _LY - 1))
+		formatString: #,##0.0
+		displayFolder: YoY Comparison
+		lineageTag: 06b56180-7b65-4a40-af78-e984a2c09693
+
+	measure 'Real Total Pay Level GBP' = AVERAGE('Fact National Monthly'[RealTotalPayLevelGBP])
+		formatString: £#,##0.0
+		displayFolder: National Metrics
+		lineageTag: 4267fe08-fd98-44a0-9e50-89473ecc4474
+
 	column Date
 		dataType: dateTime
 		formatString: Long Date
