@@ -80,8 +80,8 @@
 
 ```bash
 # Clone the repo
-git clone https://github.com/Naadir-Dev-Portfolio/PowerBI-Unemployment Dashboard.git
-cd PowerBI-Unemployment Dashboard
+git clone https://github.com/Naadir-Dev-Portfolio/UK-Labour-Market-Dashboard.git
+cd UK-Labour-Market-Dashboard
 
 # Install dependencies
 {install command}
@@ -123,7 +123,7 @@ cd PowerBI-Unemployment Dashboard
 ### Project structure
 
 ```text
-PowerBI-Unemployment Dashboard/
+UK-Labour-Market-Dashboard/
 +-- {main entry file or folder}
 +-- {supporting module or folder}
 +-- README.md
