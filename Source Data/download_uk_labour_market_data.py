@@ -20,7 +20,7 @@ ROOT = Path(__file__).resolve().parent
 RAW_DIR = ROOT
 
 NOMIS_BASE = "https://www.nomisweb.co.uk/api/v01/dataset"
-USER_AGENT = "Mozilla/5.0 (compatible; UK-Labour-Market-Dashboard/1.0)"
+USER_AGENT = "Mozilla/5.0 (compatible; powerbi-uk-Labour-Market-Dashboard/1.0)"
 
 
 class LinkParser(HTMLParser):

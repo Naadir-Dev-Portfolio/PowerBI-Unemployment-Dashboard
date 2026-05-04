@@ -1,4 +1,4 @@
-expression SourceDataFolder = "C:\\Users\\Studio\\Documents\\More Documents\\Github\\Naadir-dev-portfolio\\PowerBI-Unemployment Dashboard\\Source Data\\Model Data\\" meta [IsParameterQuery=true, Type="Text", IsParameterQueryRequired=true]
+expression SourceDataFolder = "C:\\Users\\Studio\\Documents\\More Documents\\Github\\Naadir-dev-portfolio\\powerbi-uk-Labour-Market-Dashboard\\Source Data\\Model Data\\" meta [IsParameterQuery=true, Type="Text", IsParameterQueryRequired=true]
 	lineageTag: b5be9a8e-a78f-465f-83a8-3b7cb745eded
 
 	annotation PBI_ResultType = Text

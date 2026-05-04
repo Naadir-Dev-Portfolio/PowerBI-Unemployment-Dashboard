@@ -80,8 +80,8 @@
 
 ```bash
 # Clone the repo
-git clone https://github.com/Naadir-Dev-Portfolio/UK-Labour-Market-Dashboard.git
-cd UK-Labour-Market-Dashboard
+git clone https://github.com/Naadir-Dev-Portfolio/powerbi-uk-Labour-Market-Dashboard.git
+cd powerbi-uk-Labour-Market-Dashboard
 
 # Install dependencies
 {install command}
@@ -123,7 +123,7 @@ cd UK-Labour-Market-Dashboard
 ### Project structure
 
 ```text
-UK-Labour-Market-Dashboard/
+powerbi-uk-Labour-Market-Dashboard/
 +-- {main entry file or folder}
 +-- {supporting module or folder}
 +-- README.md
