@@ -72,11 +72,11 @@ The practical outcome is a single Power BI report that replaces scattered manual
 <br />
 
 <div align="center">
-  <img src="./screens/screen1.png" alt="Labour market overview page showing vacancy rate, vacancies per claimant, real pay growth, claimant movement, national trend charts, regional claimant counts, and regional metrics table" width="88%" />
+  <img src="./portfolio/Screen1.png" alt="Labour market overview page showing vacancy rate, vacancies per claimant, real pay growth, claimant movement, national trend charts, regional claimant counts, and regional metrics table" width="88%" />
   <br /><br />
-  <img src="./screens/screen2.png" alt="Executive summary page showing labour market status, headline claimant and vacancy KPIs, year-on-year comparison charts, and pay level trends" width="88%" />
+  <img src="./portfolio/Screen2.png" alt="Executive summary page showing labour market status, headline claimant and vacancy KPIs, year-on-year comparison charts, and pay level trends" width="88%" />
   <br /><br />
-  <img src="./screens/screen3.png" alt="Local area explorer page showing selected areas, claimant rate, local claimant count, unemployment rate, treemap, top local areas, history chart, and local authority metrics table" width="88%" />
+  <img src="./portfolio/Screen3.png" alt="Local area explorer page showing selected areas, claimant rate, local claimant count, unemployment rate, treemap, top local areas, history chart, and local authority metrics table" width="88%" />
 </div>
 
 </details>
@@ -131,15 +131,19 @@ The finished model feeds multiple Power BI pages: a labour market overview, an e
 
 ~~~text
 powerbi-uk-Labour-Market-Dashboard/
-+-- UK-Labour-Market-Dashboard.pbix
-+-- data/
++-- UK Labour Market Dashboard.pbip
++-- UK Labour Market Dashboard.Report/
++-- UK Labour Market Dashboard.SemanticModel/
 +-- README.md
 +-- repo-card.png
-+-- screens/
-|   +-- screen1.png
 +-- portfolio/
     +-- powerbi-uk-labour-market-dashboard.json
-    +-- powerbi-uk-labour-market-dashboard.webp
+    +-- powerbi-uk-labour-market-dashboard.png
+    +-- powerbi-uk-labour-market-dashboard-featured.png
+    +-- powerbi-uk-labour-market-dashboard-full.png
+    +-- Screen1.png
+    +-- Screen2.png
+    +-- Screen3.png
 ~~~
 
 ### Data / system notes
