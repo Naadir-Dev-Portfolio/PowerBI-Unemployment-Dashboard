@@ -8,6 +8,8 @@
 
 <p>Built for analysts, recruiters, policy watchers, and business users who need a clear view of labour market pressure across England without manually collecting and comparing ONS datasets.</p>
 
+<p><strong>Technical documentation:</strong> <a href="https://naadir-dev-portfolio.github.io/powerbi-uk-Labour-Market-Dashboard/">View the published report documentation</a></p>
+
 <p>
   <a href="#overview">Overview</a> |
   <a href="#what-problem-it-solves">What It Solves</a> |
